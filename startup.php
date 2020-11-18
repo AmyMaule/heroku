@@ -1,5 +1,5 @@
 <? php
 
-include_once("Ghomepage.html");
+include_once("index.html");
 
 ?>
