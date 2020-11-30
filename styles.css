@@ -1,0 +1,135 @@
+@import url(https://fonts.googleapis.com/css2?family=Inconsolata&display=swap);
+
+body {
+    background-color: rgb(7, 14, 73);
+    font-family: Inconsolata;
+    color: rgb(187, 182, 255);
+}
+
+.projects {
+    margin-top: 3em;
+    margin-left: 2em;
+    text-decoration: underline;
+}
+
+#container{
+	box-shadow: 1px 10px 10px 1px rgba(114, 113, 113, 0.31);
+	background: rgba(241, 255, 255, 0.89);
+	text-align: center;
+    border-radius: 5px;
+    position: relative;
+	/* overflow: hidden; */
+	margin: 3em auto;
+	height: 21rem;
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.product-details {
+	position: relative;
+	text-align: left;
+	overflow: hidden;
+	padding: 30px;
+	/* height: 100%; */
+	float: left;
+	width: 30%;
+}
+
+.project-title {
+	display: inline-block;
+	position: relative;
+	font-size: 34px;
+	color: #344055;
+	margin-top: 0;
+}
+
+.information {
+	text-align: center;
+	font-size: 1em;
+	color: #7d7d7d;
+}
+
+.project-links {
+    width: 100%;
+}
+
+.btn {
+    border: 1px solid white;
+    font-family: Inconsolata;
+    width: 7em;
+    float: left;
+	background: #04a086;
+	cursor: pointer;
+	color: #eee;
+	padding: 0;
+    margin-bottom: 20%;
+    margin-top: 20%;
+    font-size: 1em;
+    display: inline;
+    padding: 10px 20px;
+}
+
+.btn:hover {
+    transition: 0.7s ease-in-out;
+    background-color: rgb(53, 99, 252);
+}
+
+.project-image {
+	/* object-fit: cover; */
+	display: inline-block;
+	/* position: relative; */
+    /* overflow: hidden; */
+    /* margin: 0; */
+	/* height: 70%; */
+    /* float: right; */
+    /* float right keeps it right at the right hand edge with no gap or margin */
+    width: 80%;
+    /* padding-bottom: 50px;
+    padding-top: 50px; */
+}
+
+.project-image img {
+    border-radius: 5px;
+}
+
+.product-image img:hover {
+    transition: 0.3s ease-in-out;
+}
+
+#container img {
+    width: 100%;
+}
+
+.hover-play {
+    align-items: center;
+    justify-content: center;
+}
+
+.play-now {
+    display: none;
+    background: rgba(27, 26, 26, 0.9);
+    text-align: center;
+    transition: all 0.3s ease-out;
+    transform: translateX(-100%);
+    position: absolute;
+    line-height: 1.9;
+    text-align: left;
+    cursor: no-drop;
+    color: #FFF;
+    /* width: 60%; */
+    left: 10%;
+    right: 10%;
+    top: 50%;
+}
+
+.product-image:hover .play-now {
+    transform: translateX(0);
+}
+
+.product-image:hover {
+    background-color: green;
+    /* transition: all 0.3s ease-out; */
+}
+
+/* .product-image:hover {transform: scale(1.1, 1.1);} */
