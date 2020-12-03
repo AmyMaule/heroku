@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Abel');
+
+html, body {
+  background: #FCEEB5;
+  font-family: Abel, Arial, Verdana, sans-serif;
+}
+
+.intro {
+  margin: 2rem 8rem;
+}
+
+.intro-para {
+  margin: 0 8rem;
+  font-size: 1.1rem;
+}
+
+.center {
+  margin-top: 8rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  padding-bottom: 5rem;
+}
+
+
+.card {
+  width: 50rem;
+  height: 15rem;
+  background-color: #fff;
+  /* background: linear-gradient(#f8f8f8, #fff); */
+  box-shadow: 0 8px 16px -8px rgba(0,0,0,0.4);
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+  margin: 1.5rem;
+}
+
+#card-1 {
+  background-image: url("play-tetris.png");
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: right center;
+  min-height: 100%;
+}
+
+#card-2 {
+  background-image: url("snake11.jpg");
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center center;
+  min-height: 100%;
+}
+
+/* DONT TOUCH - keeps titles on the right */
+.card h1 {
+    float: right;
+    font-size: 2.6em;
+    margin: 0.5em 0.5em;
+}
+
+#play-tetris {
+  outline:none;
+  width: 18rem;
+  height: 6rem;
+  left: 28rem;
+  font-size: 2.5rem;
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik', sans-serif;
+  border: 3px solid rgb(173, 3, 3);
+  border-radius: 5px;
+  background-image: url("bgpink.jpg");
+}
+
+#play-tetris:hover {
+  border-color: rgb(207, 1, 1);
+  border-radius: 5px;
+  background-image: url("bgpinkdark.jpg");
+}
+
+#play-tetris:active {
+  outline:none;
+  box-shadow: 3px 3px rgb(148, 70, 70);
+  -webkit-transform: translate(-50%, -47%);
+}
+
+#play-snake {
+  outline:none;
+  width: 18rem;
+  height: 6rem;
+  left: 28rem;
+  font-size: 2.5rem;
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik', sans-serif;
+  border: 3px solid rgb(3, 116, 60);
+  border-radius: 5px;
+  background-image: url("bgblue.jpg");
+}
+
+#play-snake:hover {
+  border-color: rgb(3, 129, 30);
+  border-radius: 5px;
+  background-image: url("bgbluedark.jpg");
+}
+
+#play-snake:active {
+  outline:none;
+  box-shadow: 3px 3px rgb(148, 70, 70);
+  -webkit-transform: translate(-50%, -47%);
+}
+
+
+/* the width here determines the size of the pink or green things */
+.card .additional {
+  position: absolute;
+  width: 280px;
+  height: 100%;
+  /* background: linear-gradient(#de695e9f, #EE786E); */
+  background: linear-gradient(#ee41418e, #fdb8b1e3);
+  transition: width 0.4s;
+  /* the transition is for the hover */
+  overflow: hidden;
+  z-index: 2;
+}
+
+.card.green .additional {
+  /* background: linear-gradient(#105f41a2, #A2CCB6); */
+  /* background: linear-gradient(#0e6080a9, #a0c3c9be); */
+  background: linear-gradient(#04c5bbb0, #b3e0b2cc);
+}
+
+.card:hover .additional {
+  width: 80%;
+  border-radius: 0 5px 5px 0;
+}
+
+.card .additional .user-card {
+  width: 280px;
+  height: 100%;
+  position: relative;
+  float: left;
+}
+
+.card .additional .user-card .level,
+.card .additional .user-card .points {
+  top: 15%;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  font-weight: bold;
+  background: rgba(0,0,0,0.15);
+  padding: 0.125rem 0.75rem;
+  border-radius: 100px;
+  white-space: nowrap;
+  font-family: 'Rubik', sans-serif;
+}
+
+.additional:hover {
+  color: red;
+}
+
+/* this drops the github link to where it is in the card */
+.card .additional .user-card .points {
+  top: 85%;
+}
+/* 
+.btn {
+  font-size: 1em;
+  color: #fff;
+  background: rgba(0,0,0,0.15);
+  padding: 0.125rem 0.75rem;
+  border-radius: 100px;
+  white-space: nowrap;
+} */
+ 
+/* .card .additional .user-card svg {
+  top: 50%;
+} */
+
+.card .additional .more-info {
+  width: 250px;
+  float: right;
+  position: absolute;
+  /* THIS ONE POSITIONnnnnnnnnnnnnnnnnnnnnnnnnnnnn */
+  left: 150px;
+  height: 100%;
+}
+
+.description {
+  font-size: 1.1em;
+  text-align: center;
+  margin-top: 2em;
+  padding: 15px;
+}
+
+#description-snake {
+  color: rgb(0, 0, 46);
+}
+
+#description-tetris {
+  color: rgb(63, 1, 1);
+}
+
+/* this styles the writing in the middle */
+.card .additional .stats {
+  font-size: 2rem;
+  display: flex;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  top: auto;
+  color: #fff;
+}
+
+.card.green .additional {
+  color: #325C46;
+}
+
+.github {
+  outline:none;
+}
+
+.github:hover {
+  border-color: rgb(78, 54, 133);
+  color: black;
+  border-radius: 5px;
+}
+
+.github:active {
+  box-shadow: 1px 1px rgb(148, 70, 70);
+  -webkit-transform: translate(-50%, -47%);
+}
