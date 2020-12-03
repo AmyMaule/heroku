@@ -61,6 +61,7 @@ html, body {
 }
 
 #play-tetris {
+  cursor: pointer;
   outline:none;
   width: 18rem;
   height: 6rem;
@@ -87,6 +88,7 @@ html, body {
 }
 
 #play-snake {
+  cursor: pointer;
   outline:none;
   width: 18rem;
   height: 6rem;
@@ -162,29 +164,10 @@ html, body {
   color: red;
 }
 
-/* this drops the github link to where it is in the card */
-.card .additional .user-card .points {
-  top: 85%;
-}
-/* 
-.btn {
-  font-size: 1em;
-  color: #fff;
-  background: rgba(0,0,0,0.15);
-  padding: 0.125rem 0.75rem;
-  border-radius: 100px;
-  white-space: nowrap;
-} */
- 
-/* .card .additional .user-card svg {
-  top: 50%;
-} */
-
 .card .additional .more-info {
   width: 250px;
   float: right;
   position: absolute;
-  /* THIS ONE POSITIONnnnnnnnnnnnnnnnnnnnnnnnnnnnn */
   left: 150px;
   height: 100%;
 }
@@ -222,6 +205,7 @@ html, body {
 
 .github {
   outline:none;
+  cursor: pointer;
 }
 
 .github:hover {
