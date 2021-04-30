@@ -1,61 +1,71 @@
-@import url('https://fonts.googleapis.com/css?family=Abel');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Solway:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Abel");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Solway:wght@500&display=swap");
 
-html, body {
-  background: #fff4c7;
-  font-family: Abel, Arial, Verdana, sans-serif;
+html,
+body {
+    background: #fff4c7;
+    font-family: Abel, Arial, Verdana, sans-serif;
 }
 
-
 h1 {
-  font-size: 2.3rem;
+    font-size: 2.3rem;
 }
 
 .intro {
-  margin: 2rem 8rem 1rem 8rem;
+    margin: 2rem 8rem 1rem 8rem;
 }
 
 .intro-para {
-  margin: 0 8rem;
-  font-size: 1.3rem;
+    margin: 0 8rem;
+    font-size: 1.3rem;
 }
 
 .center {
-  margin-top: 6rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  padding-bottom: 5rem;
+    margin-top: 9rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    padding-bottom: 5rem;
 }
 
 .project-card {
-  width: 50rem;
-  height: 15rem;
-  background-color: #fff;
-  /* background: linear-gradient(#f8f8f8, #fff); */
-  box-shadow: 0 8px 16px -8px rgba(0,0,0,0.4);
-  border-radius: 6px;
-  overflow: hidden;
-  position: relative;
-  margin: 1.5rem;
+    width: 50rem;
+    height: 15rem;
+    background-color: #fff;
+    /* background: linear-gradient(#f8f8f8, #fff); */
+    box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.4);
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    margin: 2rem;
 }
 
 #card-1 {
-  background-image: url("play-tetris.png");
-  background-size: cover;
-  background-repeat: repeat;
-  background-position: right center;
-  min-height: 100%;
+    background-image: url("./images/play-tetris.png");
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: right center;
+    min-height: 100%;
 }
 
 #card-2 {
-  background-image: url("snake11.jpg");
-  background-size: contain;
-  background-repeat: repeat;
-  background-position: center center;
-  min-height: 100%;
+    background-image: url("./images/snake11.jpg");
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: center center;
+    min-height: 100%;
+}
+
+#card-3 {
+    background-image: url("./images/madagascar-weather-right.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    min-height: 100%;
 }
 
 .project-title {
@@ -65,137 +75,191 @@ h1 {
 }
 
 #play-tetris {
-  cursor: pointer;
-  outline:none;
-  width: 18rem;
-  height: 6rem;
-  left: 28rem;
-  font-size: 2.5rem;
-  margin: 0;
-  padding: 0;
-  font-family: 'Solway', serif;
-  border: 3px solid rgb(173, 3, 3);
-  border-radius: 5px;
-  background-image: url("bgpink.jpg");
+    cursor: pointer;
+    outline: none;
+    width: 18rem;
+    height: 6rem;
+    left: 28rem;
+    font-size: 2.5rem;
+    margin: 0;
+    padding: 0;
+    font-family: "Solway", serif;
+    border: 3px solid rgb(173, 3, 3);
+    border-radius: 5px;
+    background-image: url("./images/bgpink.jpg");
 }
 
 #play-tetris:hover {
-  border-color: rgb(207, 1, 1);
-  border-radius: 5px;
-  background-image: url("bgpinkdark.jpg");
+    border-color: rgb(207, 1, 1);
+    border-radius: 5px;
+    background-image: url("./images/bgpinkdark.jpg");
 }
 
 #play-tetris:active {
-  outline:none;
-  box-shadow: 3px 3px rgb(148, 70, 70);
-  -webkit-transform: translate(-50%, -47%);
+    outline: none;
+    box-shadow: 3px 3px rgb(148, 70, 70);
+    -webkit-transform: translate(-50%, -47%);
+    transform: translate(-50%, -47%);
+    -moz-transform: translate(-50%, -47%);
 }
 
 #play-snake {
-  cursor: pointer;
-  outline:none;
-  width: 18rem;
-  height: 6rem;
-  left: 28rem;
-  font-size: 2.5rem;
-  margin: 0;
-  padding: 0;
-  font-family: 'Solway', serif;
-  border: 3px solid rgb(3, 116, 60);
-  border-radius: 5px;
-  background-image: url("bgblue.jpg");
+    cursor: pointer;
+    outline: none;
+    width: 18rem;
+    height: 6rem;
+    left: 28rem;
+    font-size: 2.5rem;
+    margin: 0;
+    padding: 0;
+    font-family: "Solway", serif;
+    border: 3px solid rgb(3, 116, 60);
+    border-radius: 5px;
+    background-image: url("./images/bgblue.jpg");
 }
 
 #play-snake:hover {
-  border-color: rgb(3, 129, 30);
-  border-radius: 5px;
-  background-image: url("bgbluedark.jpg");
+    border-color: rgb(3, 129, 30);
+    border-radius: 5px;
+    background-image: url("./images/bgbluedark.jpg");
 }
 
 #play-snake:active {
-  outline:none;
-  box-shadow: 3px 3px rgb(148, 70, 70);
-  -webkit-transform: translate(-50%, -47%);
+    outline: none;
+    box-shadow: 3px 3px rgb(148, 70, 70);
+    -webkit-transform: translate(-50%, -47%);
+    transform: translate(-50%, -47%);
+    -moz-transform: translate(-50%, -47%);
+}
+
+#view-weather {
+    cursor: pointer;
+    outline: none;
+    width: 18rem;
+    height: 6rem;
+    left: 28rem;
+    font-size: 2.5rem;
+    margin: 0;
+    padding: 0;
+    font-family: "Solway", serif;
+    border: 3px solid rgb(9, 77, 155);
+    border-radius: 5px;
+    background-image: url("./images/bgblue1.jpg");
+}
+
+#view-weather:hover {
+    border-color: rgb(1, 97, 207);
+    border-radius: 5px;
+    background-image: url("./images/bgblue3.jpg");
+}
+
+#view-weather:active {
+    outline: none;
+    box-shadow: 3px 3px rgb(76, 76, 110);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+}
+
+.left-align {
+    line-height: 90%;
+    font-size: 2.6rem;
+    font-weight: 800;
+    width: 180px;
+    margin-right: 0;
+    text-align: center;
 }
 
 /* the width here determines the size of the pink or green things */
 .project-card-inner {
-  position: absolute;
-  width: 280px;
-  height: 100%;
-  background: linear-gradient(#ee41418e, #fdb8b1e3);
-  transition: width 0.4s;
-  /* the transition is for the hover */
-  overflow: hidden;
-  z-index: 2;
+    position: absolute;
+    width: 280px;
+    height: 100%;
+    background: linear-gradient(#ee41418e, #fdb8b1e3);
+    /* the transition is for the hover */
+    transition: width 0.4s;
+    overflow: hidden;
+    z-index: 2;
 }
 
 .green .project-card-inner {
-  /* background: linear-gradient(#105f41a2, #A2CCB6); */
-  /* background: linear-gradient(#0e6080a9, #a0c3c9be); */
-  background: linear-gradient(#04c5bbb0, #b3e0b2cc);
-  color: #325C46;
+    /* background: linear-gradient(#105f41a2, #A2CCB6); */
+    /* background: linear-gradient(#0e6080a9, #a0c3c9be); */
+    background: linear-gradient(#04c5bbb0, #b3e0b2cc);
+    color: #325c46;
+}
+
+.purple .project-card-inner {
+    background: linear-gradient(#1764d8be, #d19fe0d3);
+    color: #4d2369;
 }
 
 .project-card:hover .project-card-inner {
-  width: 80%;
-  border-radius: 0 5px 5px 0;
+    width: 80%;
+    border-radius: 0 5px 5px 0;
+}
+
+.purple:hover .project-card-inner {
+    width: 78%;
+    border-radius: 0 5px 5px 0;
 }
 
 .card-left {
-  width: 280px;
-  height: 100%;
-  position: relative;
-  float: left;
+    width: 280px;
+    height: 100%;
+    position: relative;
+    float: left;
 }
 
 .card-left .points {
-  top: 30%;
-  border-radius: 100px;
-  color: rgb(255, 251, 251);
-  text-transform: uppercase;
-  font-size: 0.9em;
-  font-weight: bold;
-  background: rgba(0,0,0,0.15);
-  padding: 0.15rem 0.75rem;
-  /* white-space: nowrap; */
-  font-family: 'Josefin Sans', sans-serif;
+    top: 30%;
+    border-radius: 100px;
+    color: rgb(255, 251, 251);
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.15);
+    padding: 0.15rem 0.75rem;
+    /* white-space: nowrap; */
+    font-family: "Josefin Sans", sans-serif;
 }
 
 .more-info {
-  width: 250px;
-  float: right;
-  position: absolute;
-  left: 150px;
-  height: 100%;
+    width: 250px;
+    float: right;
+    position: absolute;
+    left: 150px;
+    height: 100%;
 }
 
 .description {
-  font-size: 1.1em;
-  text-align: center;
-  margin-top: 2em;
-  padding: 15px;
+    font-size: 1.1em;
+    text-align: center;
+    margin-top: 2em;
+    padding: 15px;
 }
 
 #description-snake {
-  color: rgb(0, 0, 46);
+    color: rgb(0, 0, 46);
 }
 
 #description-tetris {
-  color: rgb(63, 1, 1);
+    color: rgb(63, 1, 1);
 }
 
 .github {
-  outline:none;
-  cursor: pointer;
+    outline: none;
+    cursor: pointer;
 }
 
 .github:hover {
-  border-color: rgb(228, 125, 253);
-  background: rgba(138, 137, 137, 0.342);
+    border-color: rgb(228, 125, 253);
+    background: rgba(138, 137, 137, 0.342);
 }
 
 .github:active {
-  box-shadow: 1px 1px rgb(148, 70, 70);
-  -webkit-transform: translate(-50%, -47%);
+    box-shadow: 1px 1px rgb(148, 70, 70);
+    -webkit-transform: translate(-50%, -47%);
+    transform: translate(-50%, -47%);
+    -moz-transform: translate(-50%, -47%);
 }
